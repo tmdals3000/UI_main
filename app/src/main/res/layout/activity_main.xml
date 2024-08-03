@@ -9,15 +9,18 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#FCF0F2">
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,7 +30,6 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
 
 
                     <ImageView
@@ -73,12 +75,12 @@
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Welcome \nBack"
                     android:layout_marginStart="32dp"
                     android:layout_marginEnd="32dp"
-                    android:textStyle="bold"
+                    android:text="Welcome \nBack"
+                    android:textColor="#5E4386"
                     android:textSize="50sp"
-                    android:textColor="#5E4386"/>
+                    android:textStyle="bold" />
 
 
                 <EditText
@@ -116,13 +118,46 @@
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="52dp"
                     android:layout_gravity="end"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="1dp"
+                    android:visibility="invisible"
                     app:srcCompat="@drawable/btn_login" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_btn"
+                        android:text="서브 1"
+                        android:textColor="#5E4386"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        tools:layout_marginStart="8dp" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_btn"
+                        android:text="서브 2"
+                        android:textColor="#5E4386"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
 
 
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
 
