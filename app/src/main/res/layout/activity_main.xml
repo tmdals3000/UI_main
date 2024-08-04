@@ -100,6 +100,22 @@
                     android:textColorHint="#756c6c" />
 
                 <EditText
+                    android:id="@+id/editTextText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/edittext_background"
+                    android:drawableStart="@drawable/password"
+                    android:drawablePadding="16dp"
+                    android:ems="10"
+                    android:hint="마모키"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColorHint="#756c6c" />
+
+                <EditText
                     android:id="@+id/editTextText1"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -114,6 +130,7 @@
                     android:inputType="text"
                     android:padding="8dp"
                     android:textColorHint="#756c6c" />
+
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -169,6 +186,28 @@
                     android:textStyle="bold"
                     android:layout_marginTop="46dp"
                     android:textSize="16sp"/>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monday"
+                        />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tuesday" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wednesday" />
+
+                </com.google.android.material.tabs.TabLayout>
 
             </LinearLayout>
         </ScrollView>
