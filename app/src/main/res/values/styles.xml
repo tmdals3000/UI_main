@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!-- TabLayout 스타일 정의 -->
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextColor">#5E4386</item> <!-- 기본 텍스트 색상 -->
+        <item name="tabSelectedTextColor">#ff00e1</item> <!-- 선택된 탭 텍스트 색상 -->
+    </style>
+        <color name="tab_selected">#3F51B5</color>
+        <color name="tab_default">#D3D3D3</color>
+
+</resources>
